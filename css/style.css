@@ -125,14 +125,6 @@ nav {
     margin-bottom: 40px;
 }
 
-/* initial scroll state */
-.section h2,
-.section .lede,
-.section .card {
-    opacity: 0;
-    transform: translateY(10px);
-}
-
 /* GRID + CARDS */
 
 .grid {
