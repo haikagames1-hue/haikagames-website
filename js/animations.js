@@ -20,20 +20,20 @@
         });
 
         window.gsap.from(".hero h1", {
-            y: 18,
+            y: 12,
             opacity: 0,
-            duration: 0.8,
+            duration: 0.55,
             ease,
-            delay: 0.1,
+            delay: 0.05,
             clearProps: "all",
         });
 
         window.gsap.from(".hero p", {
-            y: 12,
+            y: 8,
             opacity: 0,
-            duration: 0.7,
+            duration: 0.5,
             ease,
-            delay: 0.2,
+            delay: 0.1,
             clearProps: "all",
         });
 
@@ -44,13 +44,13 @@
             const heading = section.querySelector("h2");
             if (heading) {
                 window.gsap.from(heading, {
-                    y: 12,
+                    y: 10,
                     opacity: 0,
-                    duration: 0.6,
+                    duration: 0.45,
                     ease,
                     scrollTrigger: {
                         trigger: heading,
-                        start: "top 85%",
+                        start: "top bottom",
                         toggleActions: "play none none none",
                     },
                     clearProps: "all",
@@ -60,13 +60,13 @@
             const lede = section.querySelector(".lede");
             if (lede) {
                 window.gsap.from(lede, {
-                    y: 10,
+                    y: 8,
                     opacity: 0,
-                    duration: 0.6,
+                    duration: 0.45,
                     ease,
                     scrollTrigger: {
                         trigger: lede,
-                        start: "top 88%",
+                        start: "top bottom",
                         toggleActions: "play none none none",
                     },
                     clearProps: "all",
@@ -76,14 +76,14 @@
             const cards = section.querySelectorAll(".card");
             if (cards.length) {
                 window.gsap.from(cards, {
-                    y: 16,
+                    y: 12,
                     opacity: 0,
-                    duration: 0.65,
+                    duration: 0.5,
                     ease,
                     stagger: 0.12,
                     scrollTrigger: {
                         trigger: section,
-                        start: "top 78%",
+                        start: "top bottom",
                         toggleActions: "play none none none",
                     },
                     clearProps: "all",
