@@ -10,46 +10,51 @@
 <body>
 
 <nav>
-    <a href="index.html">Who We Are</a>
-    <a href="studio.html">Studio Life</a>
-    <a href="careers.html">Careers</a>
-    <a href="stories.html">Stories</a>
-    <a href="games.html">Games</a>
-    <a href="connect.html">Connect</a>
-    <a href="support.html">Support</a>
+    <div class="logo">Haika Games</div>
+    <div class="nav-links">
+        <a href="index.html">Who We Are</a>
+        <a href="studio.html">Studio Life</a>
+        <a href="careers.html">Careers</a>
+        <a href="stories.html">Stories</a>
+        <a href="games.html">Games</a>
+        <a href="connect.html">Connect</a>
+        <a href="support.html" class="active">Support</a>
+    </div>
 </nav>
 
-<section class="hero">
+<section class="hero compact">
     <h1>Support</h1>
     <p>Report bugs, request features, or send feedback directly to our studio.</p>
 </section>
 
 <section class="section">
-    <form>
+    <form action="mailto:support@haikagames.com?subject=Haika%20Support" method="post" enctype="text/plain">
         <div class="grid">
             <div class="card">
-                <h3>Your Name</h3>
-                <input type="text" style="width:100%; padding:10px;">
+                <h3 id="support-name-label">Your Name</h3>
+                <input type="text" name="name" autocomplete="name" required placeholder="Your name" aria-labelledby="support-name-label">
             </div>
             <div class="card">
-                <h3>Email</h3>
-                <input type="email" style="width:100%; padding:10px;">
+                <h3 id="support-email-label">Email</h3>
+                <input type="email" name="email" autocomplete="email" required placeholder="you@example.com" aria-labelledby="support-email-label">
             </div>
-            <div class="card" style="grid-column: 1 / -1;">
-                <h3>Message</h3>
-                <textarea style="width:100%; padding:10px; height:150px;"></textarea>
+            <div class="card full">
+                <h3 id="support-message-label">Message</h3>
+                <textarea name="message" required placeholder="What happened? What were you expecting?" aria-labelledby="support-message-label"></textarea>
             </div>
         </div>
         <br>
-        <button style="padding:12px 30px; background:#fff; color:#000; border:none; cursor:pointer;">
-            Submit
-        </button>
+        <button type="submit">Submit</button>
     </form>
 </section>
 
 <footer>
     © 2026 Haika Games. All Rights Reserved.
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="js/animations.js"></script>
 
 </body>
 </html>
